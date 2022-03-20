@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocVerify</title>
+    <link rel="stylesheet" href="css/sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    
+    <!--header area start-->
+    <header>
+      
+      <div class="left_area">
+        <a href="/index.html" class="logo">
+          <img src="img/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="/signDoc.html"><i class="fas fa-desktop"></i><span>Sign </span></a>
+        <a href="/verifyDoc.html"><i class="fas fa-cogs"></i><span>Verify</span></a>
+        <a href="#"><i class="fas fa-table"></i><span>Upload Transcipt</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      
+      <a href="/signDoc.html"><i class="fas fa-desktop"></i><span>Sign</span></a>
+      <a href="/verifyDoc.html"><i class="fas fa-cogs"></i><span>Verify</span></a>
+      <a href="#"><i class="fas fa-table"></i><span>Upload Transcript</span></a>
+      
+    </div>
+    <!--sidebar end-->
+    <div class="container1">
+          
+      <div class="reg-content">
+        <form action="">
+          <div class="content">
+            <h2>Upload Transcript</h2>
+              <div class="card">
+                  <label for="key">Select Transcript:</label>
+                      <input class="upload" type="file" name="key"/>
+              </div>                
+                  <button class="form_btn" >Upload Transcript</button>
+          </div>
+        </form>
+      </div>
+      <div class="img1">
+        <img src="img/upload.svg">
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html>

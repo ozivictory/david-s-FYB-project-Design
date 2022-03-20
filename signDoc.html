@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocVerify</title>
+    <link rel="stylesheet" href="css/sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    
+    <!--header area start-->
+    <header>
+      <!-- <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label> -->
+      <div class="left_area">
+        <a href="/index.html" class="logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+      </div>
+      <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="#"><i class="fas fa-desktop"></i><span>Sign </span></a>
+        <a href="/verifyDoc.html"><i class="fas fa-cogs"></i><span>Verify</span></a>
+        <a href="/Upload.html"><i class="fas fa-table"></i><span>Upload Transcipt</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      
+      <a href="#"><i class="fas fa-desktop"></i><span>Sign</span></a>
+      <a href="/verifyDoc.html"><i class="fas fa-cogs"></i><span>Verify</span></a>
+      <a href="/Upload.html"><i class="fas fa-table"></i><span>Upload Transcript</span></a>
+      
+    </div>
+    <!--sidebar end-->
+
+    <div class="container1">
+          
+      <div class="reg-content">
+        <form action="">
+          <div class="content">
+              <h2 >Sign Document</h2>
+        <div class="column">
+              <div class="card">
+                <label for="key">Full Name:</label>
+                    <input  type="text" name="name" id="name" placeholder="Document ID"/>
+                <label for="key1">Course:</label>
+                    <input  type="text" name="course" id="course" placeholder="Document ID"/>
+                <label for="key1">Department:</label>
+                    <input  type="text" name="dept" id="dept" placeholder="Document ID"/>
+                <label for="key">Faculty:</label>
+                    <input  type="text" name="fac" id="fac" placeholder="Document ID"/> 
+                </div>
+
+                <div class="card">
+                    <label for="key">Graduation Year:</label>
+                    <input  type="text" name="year" id="key"placeholder="Document ID"/>
+                <label for="key">Matric No:</label>
+                    <input  type="text" name="mat" id="mat"placeholder="Document ID"/>
+                <label for="key">Class of Degree:</label>
+                    <input  type="text" name="id" id="key" placeholder="Document ID"/>
+                <label for="key"> Document ID:</label>
+                    <input  type="text" name="id" id="key" placeholder="Document ID"/>
+            </div>
+            </div>
+              <div class="card1">
+                  <label for="key">Upload Photograph:</label>
+                      <input class="upload" type="file" name="key"/>
+              </div> 
+              <div class="card1">
+                  <label for="key">Upload Document:</label>
+                      <input class="upload" type="file" name="key"/>
+              </div> 
+              <div>
+                  <button class="form_btn" >Sign Document</button>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="img1">
+        <img src="img/addfile.svg">
+      </div>
+    </div>
+
+
+
+
+
+
+    
+        
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html
